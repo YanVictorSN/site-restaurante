@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'nimbus_sans_lregular';
+    src: url('NimbusSanL-Reg-webfont.eot');
+    src: url('NimbusSanL-Reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NimbusSanL-Reg-webfont.woff2') format('woff2'),
+         url('NimbusSanL-Reg-webfont.woff') format('woff'),
+         url('NimbusSanL-Reg-webfont.svg#nimbus_sans_lregular') format('svg');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+}
+nav {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:row;
+    padding-top: 5vh;
+}
+.style-border-up {
+    width: 12vw;
+    border-top: solid 1px #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1vw;
+    font-weight: 100;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
+.style-border-up:hover {
+    border-top:solid 4px #db735f;
+    text-decoration: #db735f;
+}
+header nav .style-border-up a:hover {
+    color: #db735f;
+}
+.car {
+    width: 5vw;
+    height: 8vh;
+}
+main {
+    background-image: url("../imgs/bg-img-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height: 140vh;
+    display: flex;
+    padding-top: 25vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#bg-transparent {
+    width: 55vw;
+    background-color: rgba(219, 214, 214, 0.8);
+    padding: 1vw;
+}
+#bg-transparent h1 {
+    font-family: 'nimbus_sans_lregular', sans-serif;
+    font-size: 10vh;
+}
+#bg-transparent span {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 16vh;
+}
+#bg-transparent-border {
+    border: solid 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#bg-central-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53vw;
+    border-bottom: solid 3px black;
+}
+#bottom-main {
+    width: 53vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1vw;
+}
+#bg-vertical-line {
+    width: 22vw;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:solid 3px black;
+}
+#bottom-main p {
+    font-size: 3vh;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
+#bottom-main img {
+    padding: 1vw;
+}
+#bottom-main button {
+    width: 22vw;
+    height: 16vh;
+    border: solid 2px black;
+    background-color: black;
+    color: white;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+    font-size: 3vh;
+    transition:ease-in-out;
+}
+#bottom-main button:hover {
+    color: black;
+    background: none;
+    transition: 0.5s ease-in-out;
+}
+/* Produtos */
+#section-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+}
+#section-products h2 {
+    padding-bottom: 5vw;
+    font-size: 3.2vh;
+    letter-spacing: 1vh;
+    font-weight: 100;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
+#bg-products {
+    display: flex;
+    gap: 1vw;
+}
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.products img {
+    width: 24vw;
+    height: 80vh;
+}
+.price-products {
+    width: 24vw;
+    height:18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.price-products p {
+    padding: 1vh;
+}
+.products  {
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
+.prices {
+    font-family: 'nimbus_sans_lregular_italic';
+}
+.btn-products {
+    width:24vw;
+    height:18vh;
+    background-color: #333333;
+    display:none;
+    align-self: center;
+    justify-self: center;
+    transition:ease-in-out;
+}
+.btn-products button {
+    width: 18vw;
+    height: 8vh;
+    background-color: #333333;
+    border: solid 1px whitesmoke;
+    color: rgb(255, 255, 255);
+}
+.products:hover .btn-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.products:hover .price-products {
+    display: none;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4vw;
+    font-size: 2vh;
+    font-family: 'nimbus_sans_lregular', sans-serif;
+}
