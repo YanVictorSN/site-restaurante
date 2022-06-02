@@ -37,6 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top:3px;
 }
 header nav a {
     text-decoration: none;
@@ -46,6 +47,7 @@ header nav a {
     font-family: 'nimbus_sans_lregular', sans-serif;
 }
 .style-border-up:hover {
+    padding-top:0px;
     border-top:solid 4px #db735f;
     text-decoration: #db735f;
 }
